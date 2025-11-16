@@ -1,0 +1,20 @@
+[project]
+name = "versionamento-poetry2"
+version = "1.1.1"
+description = ""
+authors = [
+    {name = "Djonny Lima",email = "joaolimaandre2@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pandas (>=2.3.3,<3.0.0)",
+    "ipykernel (>=7.1.0,<8.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "versionamento_poetry2", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
